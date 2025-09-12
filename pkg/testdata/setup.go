@@ -36,13 +36,13 @@ func SetupTestData() *reservation.System {
 	carriages := createCarriages()
 	
 	service5160 := domain.NewService("5160", routeParisAmsterdam, 
-		time.Date(2025, 9, 1, 8, 0, 0, 0, time.UTC), carriages)
+		time.Date(2021, 4, 1, 8, 0, 0, 0, time.UTC), carriages)
 	
 	service5161 := domain.NewService("5161", routeParisAmsterdam,
-		time.Date(2025, 12, 20, 8, 0, 0, 0, time.UTC), carriages)
+		time.Date(2021, 12, 20, 8, 0, 0, 0, time.UTC), carriages)
 	
 	service5162 := domain.NewService("5162", routeParisAmsterdam,
-		time.Date(2025, 4, 2, 10, 0, 0, 0, time.UTC), carriages)
+		time.Date(2021, 4, 2, 10, 0, 0, 0, time.UTC), carriages)
 	
 	rs.AddService(service5160)
 	rs.AddService(service5161)

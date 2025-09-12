@@ -17,12 +17,6 @@ A simple train ticketing system that manages seat reservations and bookings.
 make start
 ```
 
-### Run with Docker
-
-```bash
-make docker
-```
-
 ### Run tests
 
 ```bash
@@ -39,10 +33,9 @@ make build
 
 ```bash
 make help    # Show all commands
-make run     # Run the app
+make start   # Run the app
 make build   # Build the app
 make test    # Run tests
-make docker  # Build and run with Docker
 make clean   # Clean up files
 ```
 
@@ -69,19 +62,6 @@ booking, err := rs.MakeReservation(ReservationRequest{
 })
 ```
 
-## Docker
-
-The app is containerized and ready to run anywhere:
-
-```bash
-# Build and run in one command
-make docker
-
-# Or step by step
-make docker-build
-make docker-run
-```
-
 ## Files
 
 ### Main Package
@@ -106,6 +86,5 @@ make docker-run
 
 ### Infrastructure
 
-- `Dockerfile` - Docker configuration
 - `Makefile` - Build commands
 - `README.md` - This documentation
