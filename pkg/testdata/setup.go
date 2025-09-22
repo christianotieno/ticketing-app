@@ -12,18 +12,20 @@ func SetupTestData() *reservation.System {
 	paris := domain.NewStation("Paris")
 	london := domain.NewStation("London")
 	calais := domain.NewStation("Calais")
+	dover := domain.NewStation("Dover")
 	amsterdam := domain.NewStation("Amsterdam")
+	antwerp := domain.NewStation("Antwerp")
 	utrecht := domain.NewStation("Utrecht")
 	berlin := domain.NewStation("Berlin")
 	hannover := domain.NewStation("Hannover")
 	
 	routeParisLondon := domain.NewRoute("R001", "Paris-London", 
-		[]domain.Station{paris, calais, london},
-		[]int{0, 300, 450})
+		[]domain.Station{paris, calais, dover, london},
+		[]int{0, 300, 380, 450})
 	
 	routeParisAmsterdam := domain.NewRoute("R002", "Paris-Amsterdam",
-		[]domain.Station{paris, calais, amsterdam},
-		[]int{0, 300, 520})
+		[]domain.Station{paris, calais, antwerp, amsterdam},
+		[]int{0, 300, 420, 520})
 	
 	routeAmsterdamBerlin := domain.NewRoute("R003", "Amsterdam-Berlin",
 		[]domain.Station{amsterdam, utrecht, hannover, berlin},

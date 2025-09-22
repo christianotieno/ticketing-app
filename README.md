@@ -45,8 +45,8 @@ The system has trains that run on routes between stations. Each train has carria
 
 ### Example Routes
 
-- Paris → Calais → Amsterdam
-- Paris → Calais → London  
+- Paris → Calais → Antwerp → Amsterdam
+- Paris → Calais → Dover → London  
 - Amsterdam → Utrecht → Hannover → Berlin
 
 ### Booking a ticket
